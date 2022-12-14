@@ -1,0 +1,663 @@
+* {
+    margin: 0;
+    padding: 0 !important;
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: 'verdanaFont' ;
+    src: url(verdana.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+/* dando orientações para o corpo da pagina, para qual altura ele deve obedecer e não colocando em pixel 
+para poder manter a proporção em outras telas */
+body {
+    width: 100%;
+    height: 100%;
+    background-color:rgb(252,252,252);
+    font-family: 'verdanaFont' !important;
+
+    
+}
+
+
+.nomesnavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 36vw;
+}
+.nomesnavbar li{
+    margin-left: 4vw;
+}
+.logo{
+    margin-left: 2vw;
+    height: 5vh;
+}
+.voltar{
+    height: 3vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+#navbarScroll{
+    display: flex;
+    justify-content:right !important;
+    
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.nav-link{
+    font-size: 20px;
+    color:white !important;
+}
+
+.container-fluid{
+    background-color: #006B3F;
+    height: 10vh;
+}
+
+#nomesnavbar{
+    margin-right: 2vw;
+}
+
+.configuracoes{
+    height: 5vh;
+}
+
+/* NAVBAR ACABOU AQUI */
+
+/* .divtotal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+#divimagem{
+  width:45vw;
+  height:90vh;
+  float:left;
+  background-color:#ff1;  
+  display: initial;
+  
+  z-index: 6;
+  overflow: hidden;
+}
+#divimagem > img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.divtotal{
+  width: 100vw;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divlogin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55vw;
+  height: 90vh;
+  
+}
+.login{
+  height: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  width: 70%;
+  border-radius: 10px;
+  border: 4px solid;
+  border-color: #006B3F;
+}
+
+.divlogo{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.log{
+ margin-right: 5vh;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  height: 80%;
+  width: 100%;
+}
+
+input{
+box-sizing: border-box;
+width: 80%;
+height: 9vh;
+background: #FFFFFF;
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+}
+
+p{
+  color: #808080;
+  margin-top: 2vh;
+  
+}
+h4{
+ 
+  font-size: 18px;
+}
+
+.buttonContinuar{
+  box-sizing: border-box;
+  width: 50%;
+  height: 40px;
+  background: #006B3F;
+  border: 1px #006B3F;
+  border-radius: 10px ;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+#buttonProximo{
+  margin-top: 5vh;
+}
+
+.senhaesqueceu{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+#nomeEmpresa{
+  margin-top: 10vh;
+}
+
+
+
+#myModal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+}
+  
+/*O modal em sí completo, sem a parte blurred*/
+.modal-content {
+  background-color: #fefefe;
+  margin: 20vh auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70vw;
+}
+
+/*O header do modal onde fica o titulo e o "x" de fechar o modal*/
+.modal-header{
+  padding: 0;
+  margin:0;
+  display: flex;
+}
+  
+/*O titulo do modal, onde está escrito Editar Perfil*/
+.modal-title{
+  height:5vh;
+  font-size: 4vh;
+  font-weight: bolder;
+  flex: 1;
+  text-align: left;
+  color: orange;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/*botão "x" que fica no header*/
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  flex:1;
+}
+
+/*função que escuresce o botão "x" no hover*/
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Footer do modal que contém o botão de Salvar*/
+.modal-footer{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding:1vh 0 0 0;
+}
+
+/*Area principal do modal. Fica entre o header e o footer*/
+.modal-body{
+  display:flex;
+}
+
+/*Area da esquerda do body. Contém a foto de perfil e o botão de mudar a foto*/
+#modal-body-left{
+  width:21vw;
+  height:auto;
+  text-align: center;
+}
+
+/*A foto de perfil*/
+#modal-image{
+  width: 11vw;
+  height: auto;
+  border-radius: 100%;
+  margin: 0;
+}
+
+/*Botão de mudar a foto de perfil (Por enquanto é um texto normal, e não um button*/
+#change-photo{
+  margin: 2vh 0 0 0;
+  color: orange;
+  font-size:80%;
+  font-weight: 150;
+}
+
+/*Area da direita do body. Contém todo o resto*/
+#modal-body-right{
+  width: 49vw;
+  height: auto;
+  text-align: justify;
+}
+
+/*Titulo do lado direito que diz "Dados Pessoais"*/
+#modal-right-titulo{
+  font-size: 3vh;
+  font-weight: bolder;
+}
+
+/*Area onde fica tudo de input e seus labels. Por exemplo: (Nome: [input de Nome])*/
+.modal-ajuste{
+  display:flex;
+  margin: 1vh 0;
+}
+
+
+/*Todos os labels para cada input. ("Nome:", "Telefone:", "Instagram:", etc.)*/
+.modal-ajuste-titulo{
+  font-size: 1.6vh;
+  width: 10vw;
+  text-align: right;
+  font-weight: 550;
+  margin: 1% 0 0 0;
+}
+
+/*Todas as caixas de input*/
+.modal-ajuste-texto{
+  font-size: 2vh;
+  margin: 0 0 0 1vw;
+  width: 39vw;
+  text-align: left;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*AQUI ACABARAM OS CSS DAS COISAS DENTRO DO MODAL*/
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+/*A tela principal inteira*/
+#principal{
+  background: rgb(255, 255, 255);
+  width: 100vw;
+  margin: auto;
+  height: 100vh;
+}
+
+/*Header da tela principal. Contém logo da MRV, botão de obras, e botão de settings*/
+#header{
+  height:6vh;
+  background-color: orange;
+  font-weight: bolder;
+  display: flex;
+}
+
+/*Area da esquerda do header. Contém a logo MRV*/
+#header_left{
+  height: 6vh;
+  width: 90vw;
+  display:flex;
+}
+
+/*Logo MRV*/
+#head_logo{
+  height: 4vh;
+  width:auto;
+  margin: 1vh 0;
+}
+
+/*Area da direito do header. Contém botão de obras e de settings*/
+#header_right{
+  height: 6vh;
+  width: 10vw;
+  position: relative;
+  text-align: right;
+  display: flex;
+}
+
+/*Botão de setting que abre o modal*/
+#myBtn{
+  background-color: orange;
+  border: 0px;
+  height:6vh;
+  width:auto;
+  margin: 0 0 0 1vw;
+}
+
+/*Imagem do botão. Neste caso o ícone da engrenagem*/
+#myBtn-img{
+  height: 5vh;
+  width:auto;
+}
+
+/*Botão de obras, que tem que levar para a tela do luiz*/
+#b_obras{
+  background-color: orange;
+  border: 0px;
+  height:6vh;
+  width:auto;
+  margin: 0 0 0 0;
+}
+
+/*Imagem do botão. Neste caso o ícone do trabalhador*/
+#b_obras-img{
+  height: 4.5vh;
+  width:auto;
+}
+
+/*Area principal da pagina. Fica abaixo do header*/
+#corpo{
+    height: 84vh;
+    display: flex;
+}
+
+/*Area da esquerda do corpo. Contém a foto de perfil, nome, ícones de contato(whats, insta, etc.), e avaliação em estrelinha*/
+#corpo_left{
+
+    height: 60vh;
+    width: 35vw;
+    text-align: center;
+    margin: auto;
+}
+
+/*Foto de perfil*/
+#profile_picture{
+  width: 20vw;
+  height: auto;
+  border-radius: 100%;
+  margin: 5vh 0 0 0;
+}
+
+/*Nome completo do perfil*/
+#profile_name{
+  font-size: 3vh;
+  font-weight: bold;
+  margin: 2vh 0 0 0;
+}
+
+/*Ícones de contato. (Whatsapp, Instagram, Facebook, email, telefone)*/
+#contact_icons{
+  height:4vh;
+  width:11.3vw;
+  margin: 0 11.85vw;
+  text-align: center;
+  display:flex;
+}
+
+/*Ícone da estrelinha na avaliação*/
+#profile_rating{
+  height:2.5vh;
+  width:4.3vw;
+  margin: 2vh 15.35vw;
+  text-align: center;
+  display:flex;
+}
+
+/*A avaliação em sí*/
+.profile_rating-text{
+  font-size: 2.5vh;
+  margin: 0 0 0 0.5vw;
+  font-weight: bold;
+  align-items: center;
+}
+
+/*Area da direita do corpo. Contém descrição, experiência, recomendações, e linhas de separação*/
+#corpo_right{
+  height: 84vh;
+  width: 65vw;
+}
+
+/*Todas as linhas de separação*/
+.lines{
+  margin: 0 9vw 0 3vw;
+}
+
+/*Define que a primeira linha não existe, a que fica encima de Descrição (Ela aparece apenas em mobile)*/
+#corpo_right hr:first-of-type{display:none;}
+
+/*Os titulos de cada area. ("Descrição", "Experiência", "Recomendações")*/
+.corpo_titulos{
+  font-size: 4vh;
+  font-weight: bolder;
+  margin: 3vh 0 0 3vw;
+}
+
+/*A descrição em sí*/
+#corpo_descrição{
+  height: auto;
+  font-size: 2vh;
+  margin: 0 9vw 2vh 3vw;
+  text-align: justify;
+}
+
+/*Area de experiencias que contém o titulo "Experiências" e os quadros das esperiências*/
+#Experiências{
+  height: 21vh;
+  width: 65vw;
+  margin: 0 0 6vh 0;
+}
+
+/*Area de experiências que contém todas as experiências*/
+#conteudo_exp{
+  height: 16vh;
+  padding: 0 0 1vw 0;
+  display: flex;
+  overflow-x: auto;
+  margin: 2vh 0 0 0;
+}
+
+/*Os quadros/cards das experiências*/
+.exp_icons{
+  margin: 0 3vh;
+  width: 100%;
+  height: 100%;    
+}
+
+/*Area das recomendações que contém o titulo "Recomendações" e a lista das recomendações*/
+#Recomendações{
+  height: 21vh;
+  margin: 0 9vw 0 0;
+}
+
+/*Background da area da recomendações*/
+.scroll-bg{
+  height: 100%;  
+}
+
+/*Area onde fica a lista das recomendações*/
+.scroll-div{
+  height: 100%;
+  margin: 0 0 0 5%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+/*Os titulos de cada recomendação. Por enquanto estão como "Recommendation 1:", "Recommendation 2:", etc.*/
+.rec-list-titulo{
+  font-size: 2vh;
+  font-weight: bold;
+  line-height: 3vh;
+  margin:0;
+}
+
+/*O texto escrito de cada recomendação*/
+.rec-list-text{
+  margin:0;
+  font-size: 2vh;
+  line-height: 3vh;
+}
+
+/*O retangulo cinza que fica na parte de baixo da tela*/
+#bottom{
+    height:10vh;
+    background-color: gray;
+}
+
+
+@media screen and (max-width: 768px) {
+  #corpo_right hr:first-of-type{display:block;}
+
+  #bottom{
+    height:0vh;
+    background-color: none;
+  }
+
+  #corpo{
+    display:block;
+    text-align: center;
+  }
+
+  #corpo_right{
+    text-align: left;
+    height:auto;
+    width: 100vw;
+    margin: 0 3vw;
+  }
+  
+  .corpo_titulos{
+    width: auto;
+    margin: 2vh 0 0 0;
+  }
+
+  #corpo_descrição{
+    margin: 0 3vw 2vh 0;
+    height: auto;
+  }
+  #Experiências{
+    width: auto;
+    margin: 0 0 6vh 0;
+  }
+  #conteudo_exp{
+      margin: 1vh 0 0 0;
+      height: 20vh;
+  }
+  .exp_icons{
+      margin: 0 3vh;  
+  }
+
+  #Recomendações{
+      height: 21vh;
+      margin: 0 9vw 0 0;
+  }
+
+  #corpo_left{
+    height: auto;
+    width: 100vw;
+    margin: 0 3vw;
+  }
+
+  #profile_picture{
+    width: 50vw;
+    margin:5vh 0 0 0;
+  }
+
+  #profile_name{
+    font-size: 6vh;
+    font-weight: bolder;
+    margin: 5vh 0 0 0;
+  }
+  #contact_icons{
+    width:22vw;
+    margin: 2vh 0 0 39vw;
+    display:flex;
+  }
+  #profile_rating{
+    width:4.5vw;
+    height:auto;
+    margin: auto;
+  }
+  .profile_rating-text{
+    height:auto;
+    padding: 2vh 0 0 0;
+  }
+  .modal-content {
+    margin: 0;
+    padding:15px;
+    width: 100vw; /* Could be more or less, depending on screen size */
+    height: 100vh;
+  }
+  #modal-body-right{
+    width: 90vw;
+  }
+  #modal-right-titulo{
+    text-align: center;
+    margin: 3vh 0 0 0;
+    font-size: 4vh;
+  }
+  #modal-body-left{
+    width:90vw;
+  }
+  .modal-ajuste-titulo{
+    font-size: 2.5vh;
+    width: 88vw;
+    margin: 1.5vh 1vw 0 1vw;
+    text-align: left;
+  }
+  .modal-ajuste{
+    display: block;
+  }
+  .modal-ajuste-texto{
+    font-size: 2vh;
+    margin: 0 0 0 1vw;
+    width: 88vw;
+  }
+
+  #change-photo{
+    margin: 2vh 0;
+    font-size:2vh;
+    font-weight:lighter;
+
+  }
+  .modal-body{
+    display:block;
+  }
+
+  #modal-image{
+    width: 30vw;
+  }
+
+ 
+
+}

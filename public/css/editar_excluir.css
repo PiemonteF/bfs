@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: 'verdanaFont' ;
+    src: url(verdana.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+/* dando orientações para o corpo da pagina, para qual altura ele deve obedecer e não colocando em pixel 
+para poder manter a proporção em outras telas */
+body {
+    
+    height: 100%;
+    background-color:rgb(252,252,252);
+    font-family: 'verdanaFont' !important;
+    
+}
+
+
+.nomesnavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20vw;
+}
+.nomesnavbar li{
+    margin-left: 5vw;
+}
+.logo{
+    height: 5vh;
+}
+
+#navbarScroll{
+    display: flex;
+    justify-content:right !important;
+    
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.nav-link{
+    font-size: 25px;
+    color:#006B3F !important;
+}
+
+.filtro{
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(0,107,63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtro select {
+    min-width: 15rem;
+    min-height: 3rem;
+    background-color: #fff;
+    border: 2px solid #d9dddb;
+    border-radius: 0.5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    padding: 1rem 1rem;
+}
+.h5-filtro{
+    font-size: 15px;
+    color:white;
+}
+
+.sticky-top{
+    z-index: 21;
+}
+
+
+.dropdown-menu{
+    z-index: 22;
+    margin-right: 5vw;
+}
+
+.nav-link dropdown-toggle{
+    width: 5vw;
+}
+
+.btn-primary {
+    width: 8vw;
+    height: 7vh;
+    --bs-btn-color: #fff;
+    background-color: #ff961f !important;
+    --bs-btn-border-color: #ff961f;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ff961f;
+    --bs-btn-hover-border-color: #ff961f;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #ff961f;
+    --bs-btn-active-border-color: #ff961f;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #ff961f;
+    --bs-btn-disabled-border-color: #ff961f;
+    margin-left: 2vh;
+}
+
+/* terminando o carrossel */
+
+.h1-obras{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.div-card{
+    margin-left: 16% ;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    height: 50vh !important;
+    margin-right: 7%;
+    margin-top: 7%;
+}
+
+
+#seemorebutton{
+    padding: 10px;
+    width: 20%;
+   
+}
+
+.seemore{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* começando o footer */
+/* colocando o tamanho do footer, a sua cor de fundo, e alinhando onde seus itens ficarão melhor posicionado, 
+com o padding, justify content e display sendo flex */
+footer{
+    background-image: linear-gradient(45deg, #006B3F, #079D56);
+    margin-top: 10vh;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:static;
+    
+}
+
+/* linha abaixo dos titulos, criando a altura, a largura e a cor da linha e o melhor posicionamento dela abaixo do titulo */
+hr{
+    width: 40%;
+    height: 6px;
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+footer .sustentabilidade {
+    position: absolute;
+    top: 42%;
+    left: 48.5%;
+    width: 15% !important
+}
+
+/* alinhando as colunas ex: contato e imavbeis a venda e colocando as fonts com padrão de 20px dentro do seu respectivo tamanho */
+footer div{
+    text-align: left;
+    font-size: 20px;
+    padding: 5px;
+    
+}
+.position-relative{
+ position:static !important;
+ 
+}
+/* ajustando as listas e as alinhando para a esquerda, colocando o tamanho da fonte e a cor como branca */
+footer li{
+    text-align: left;
+    
+    color: #fff;
+    list-style: none;
+    font-size: 15px;
+}
+
+ footer li a{
+    color:#fff
+}
+
+
+footer li.listDesk {
+    float: left;
+    margin: 0 16px !important;
+    width: 13%
+}
+
+
+footer .rodado {
+    display: inline-block;
+    transform: rotate(180deg);
+    transition: all .3s ease-in-out
+}
+
+
+/* terminando footer */
+
+@media screen and (max-width: 768px) {
+    .filtro{
+        min-width: 100%;
+        min-height: 15vh;
+        padding: 5px;
+        background-color: rgb(0,107,63);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+    }
+    .filtro select {
+        min-width: 5vw;
+        min-height: 2vh;
+        background-color: #fff;
+        border: 2px solid #d9dddb;
+        border-radius: 0.5rem;
+        font-size: .875rem;
+        line-height: 1.5;
+        padding: 1rem 1rem;
+    }
+
+
+    .btn-primary {
+        width: 15vw;
+        height: 7vh;
+        --bs-btn-color: #fff;
+        background-color: #ff961f !important;
+        font-size: 14px;
+    }
+    #buttonsearch{
+        width: 10vw;
+        height: 7vh;
+    }
+    /* posicionamento do texto, fazendo com que ele fique 30 porcento acima da margem final do block box e 5 porcento a esquerda da margin final */
+    .block .text {
+        position: absolute;
+        bottom: 30%;
+        left: 5%;
+    }
+
+    /* mexendo no titulo do block box, ajustando sua cor e a margem */
+    .block .text h2{
+        color: white;
+        margin-bottom: 7vh;
+        margin-left: 1vw;
+        font-size: 18px;
+    }
+    /* Colocando um alinhamento do texto a esquerda, com o tamanho de 45 porcento da block box e a sua cor como branca */
+    .block .text h3 {
+        max-width: 45%;
+        font-size: 13px;
+
+    }
+    .card{
+        height: 55vh !important;
+        margin-right: 7%;
+        margin-top: 7%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .filtro{
+        min-width: 100%;
+        min-height: 20vh;
+        padding: 5px;
+        background-color: rgb(0,107,63);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+    }
+    .filtro select {
+        min-width: 1vw ;
+        min-height: 2vh ;
+        background-color: #fff;
+        border: 2px solid #d9dddb;
+        border-radius: 0.5rem;
+        font-size: .875rem;
+        line-height: 1.5;
+        padding: 1rem 1rem;
+    }
+
+
+    .btn-primary {
+        width: 40%;
+        height: 7vh;
+        --bs-btn-color: #fff;
+        background-color: #ff961f !important;
+        font-size: 90%;
+    }
+    #buttonsearch{
+
+        height: 7vh;
+    }
+    /* posicionamento do texto, fazendo com que ele fique 30 porcento acima da margem final do block box e 5 porcento a esquerda da margin final */
+    .block .text {
+        position: absolute;
+        bottom: 30%;
+        left: 5%;
+    }
+
+    /* mexendo no titulo do block box, ajustando sua cor e a margem */
+    .block .text h2{
+        color: white;
+        margin-bottom: 7vh;
+        margin-left: 1vw;
+        font-size: 18px;
+    }
+    /* Colocando um alinhamento do texto a esquerda, com o tamanho de 45 porcento da block box e a sua cor como branca */
+    .block .text h3 {
+        max-width: 45%;
+        font-size: 13px;
+
+    }
+    .card{
+        height: 55vh !important;
+        margin-right: 7%;
+        margin-top: 7%;
+    }
+
+}
+
+/* Conteudo da pagina */
+.titulo-suas-obras{
+    text-align: center;
+  }
+  
+  .div-card{
+    margin-left: 8% ;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  .card{
+    border: 2px solid black !important;
+    border-color: black !important;
+    height: 60vh !important;
+    margin-right: 3%;
+    margin-top: 3%;
+  }
+  
+ .titulo-card{
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    margin-bottom: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #006B3F;
+    color: white;
+  }
+
+  .card-img, .card-img-top{
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+
+  .icone-excluir{
+    display: inline-block;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+  .icone-editar{
+    display: inline-block;
+    margin-left: 70px;
+    cursor: pointer;
+  }
+
+  /*Edicao rodape*/
+
+  .logo-rodape{
+    padding: 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 5vh;
+}
+
+.corpo-rodape{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nosso-git{
+    padding-bottom: 3vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

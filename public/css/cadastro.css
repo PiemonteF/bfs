@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0 !important;
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: 'verdanaFont' ;
+    src: url(verdana.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+/* dando orientações para o corpo da pagina, para qual altura ele deve obedecer e não colocando em pixel 
+para poder manter a proporção em outras telas */
+body {
+    width: 100%;
+    height: 100%;
+    background-color:rgb(252,252,252);
+    font-family: 'verdanaFont' !important;
+
+    
+}
+
+.nomesnavbar li{
+    margin-left: 4vw;
+}
+.logo{
+    margin-left: 2vw;
+    height: 5vh;
+}
+.voltar{
+    height: 3vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+#navbarScroll{
+    display: flex;
+    justify-content:right !important;
+    
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.nav-link{
+    font-size: 20px;
+    color:white !important;
+}
+
+.container-fluid{
+    background-color: #006B3F;
+    height: 10vh;
+}
+
+#nomesnavbar{
+    margin-right: 2vw;
+}
+
+.configuracoes{
+    height: 5vh;
+}
+
+/* NAVBAR ACABOU AQUI */
+
+/* .divtotal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+#divimagem{
+  width:45vw;
+  height:90vh;
+  float:left;
+  background-color:#ff1;  
+  display: initial;
+  margin: auto;
+  z-index: 6;
+  overflow: hidden;
+}
+#divimagem > img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.divtotal{
+  width: 100vw;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline{
+    margin-left: 5%;
+    width: 90%;
+    height: 20vh;
+    color: #006B3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circulo{
+background: #006B3F;
+border-radius: 50%;
+width: 5vw;
+height: 10vh;
+margin-left: 4vw;
+
+}
+.dois{
+    margin-left: 4vw;
+    background-color: #D9D9D9;
+}
+.timeline-initial{
+    width:100%;
+    height: 1vh;
+    border:1px solid ;
+    border-radius: 10rem;
+    background-color: #006B3F;
+    display: flex;
+    align-items: center;
+}
+
+.divlogin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55vw;
+  height: 60vh;
+  
+}
+.login{
+  height: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  width: 70%;
+  border-radius: 10px;
+  border: 4px solid;
+  border-color: #006B3F;
+}
+
+.divlogo{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.log{
+ margin-right: 5vh;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 50%;
+  /* width: 100%; */
+}
+
+.cadastro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
+
+input{
+
+box-sizing: border-box;
+width: 80%;
+height: 35%;
+background: #FFFFFF;
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+}
+
+
+p{
+  color: #808080;
+  margin-top: 2vh;
+}
+h4{
+ 
+  font-size: 18px;
+}
+.buttonEsqueceu{
+  width: 20%;
+  border: none;
+  background: transparent;
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: lowercase;
+  padding: 0px !important;
+  margin: 0px !important;
+  color: rgb(102, 102, 102) !important;
+}
+
+.buttonContinuar{
+
+  box-sizing: border-box;
+  width: 80%;
+  height: 20%;
+  background: #006B3F;
+  border: 1px #006B3F;
+  border-radius: 10px ;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+button .buttonEsqueceu{
+  margin-right: 2vw;
+}
+
+#buttonProximo{
+  height: 50%;
+}
+
+#buttonFinalizar{
+  margin-top: 7vh;
+  height: 50%;
+}
+
+.senhaesqueceu{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/* Alinha placeholder */
+#inputNomeempresa::placeholder {
+  text-align: center;
+}
+
+#inputCnpj::placeholder {
+  text-align: center;
+}
+
+#inputContato::placeholder {
+  text-align: center;
+}
+
+#inputEmail::placeholder {
+  text-align: center;
+}
+
+#inputsenha::placeholder {
+  text-align: center;
+}

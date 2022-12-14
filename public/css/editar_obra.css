@@ -1,0 +1,126 @@
+/* Estrutura Modal Editar obras */
+* {
+    font-family: Helvetica;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 1rem;
+  }
+  
+  h1 {
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    padding: 0.6rem 1.2rem;
+    background-color: #888;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 1rem;
+  }
+
+.titulo-suas-obras{
+    text-align: center;
+}
+
+.imagem-projeto img{
+    max-width: 250px;
+}
+
+.imagem-projeto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#trocar-imagem {
+    border-radius: 10px;
+    background-color: #FFB719;
+    width: 30%;
+    align-items: center;
+  }
+
+.logradouro{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+#logradouro{
+  border-style: double;
+  padding: 1%;
+  width: 100%;
+}
+
+.bairro{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.previsao-entrega{
+  display: flex;
+  flex-direction: column;
+  width: 67%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+#previsao-entrega{
+  padding: 1%;
+  text-align: center;
+  width: 90%
+}
+
+.cidade{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+
+}
+.estado{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.endereco{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#endereco{
+  padding: 1%;
+  text-align: center;
+  width: 80%
+}
+
+#descricao{
+  padding: 10%;
+  width: 100%;
+}
+
+#atualiza-projeto {
+  border-radius: 10px;
+  background-color: #FFB719;
+  width: 20%;
+}
+
+.atualiza-projeto{
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}

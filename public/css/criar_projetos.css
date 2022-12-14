@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: 'verdanaFont' ;
+    src: url(verdana.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+/* dando orientações para o corpo da pagina, para qual altura ele deve obedecer e não colocando em pixel 
+para poder manter a proporção em outras telas */
+body {
+    
+    height: 100%;
+    background-color:rgb(252,252,252);
+    font-family: 'verdanaFont' !important;
+    
+}
+
+
+.nomesnavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16vw;
+}
+.nomesnavbar li{
+    margin-left: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.logo{
+    height: 5vh;
+}
+
+#navbarScroll{
+    display: flex;
+    justify-content:right !important;
+    
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.nav-link{
+    font-size: 21px;
+    color:#006B3F !important;
+}
+ 
+.dropdown-menu{
+    z-index: 22;
+    margin-right: 5vw;
+}
+
+
+
+
+
+.box{
+    width: 100% ;
+    height: 30vh;
+    /* #353432 */
+    /* #ed9f02 */
+    background-color: #006B3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+    color: white;
+}
+#divimagem{
+    width:29.5vw;
+    
+    left: 0;
+    float:left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+/* .imagem{
+
+    width:25vw;
+    height:30vh;
+    float:left;
+    background-color:#ff1;  
+    display: initial;
+    margin: auto;
+    z-index: 6;
+    overflow: hidden;
+}
+.imagem > img {
+    width: 100%; 
+    height: 100%;
+} */
+  
+
+  .linha-grande{
+    width:0.5vw;
+    height: 90vh;
+
+    background-color: #D9D9D9;
+
+  }
+input[type="file"]{
+    display: none;
+    margin-top: 4vh;
+    margin-left: 3vw;
+}
+    
+#picture_input {
+display: none;
+}
+
+.picture {
+width: 25vw;
+aspect-ratio: 16/9;
+background: #ddd;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #aaa;
+border: 2px dashed currentcolor;
+cursor: pointer;
+font-family: sans-serif;
+transition: color 300ms ease-in-out, background 300ms ease-in-out;
+outline: none;
+overflow: hidden;
+}
+
+.picture:hover {
+color: #777;
+background: #ccc;
+}
+
+.picture:active {
+border-color: turquoise;
+color: turquoise;
+background: #eee;
+}
+
+.picture:focus {
+color: #777;
+background: #ccc;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.picture_img {
+max-width: 100%;
+}
+
+.divtotal{
+    width: 100vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.divlogin{
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 90vh;
+    
+  }
+.divlogradouro{
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+    height: 15vh;
+}
+.divBEC{
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+  }
+
+.divNome{
+    padding-bottom: 3%;
+}
+
+.endereco{   
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items:center;
+    justify-content: space-between;
+
+}
+
+.divDatas{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items:center;
+    justify-content: space-between;
+
+}
+.divdataIn{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.tipoDeServico{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.divDescricao{
+    display: flex;
+    flex-direction: column;
+}
+
+.divAreaTamanho{
+    padding-left: 5%;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.divArea{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.divTamanho{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.divdataFim{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.divNum{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.login{
+    height: 98vh;
+    margin: 0 auto;
+    padding: 10px;
+    width: 70%;
+    border-radius: 10px;
+    border: 4px solid;
+    border-color: #006B3F;
+  }
+  
+
+  
+.log{
+   margin-right: 5vh;
+  }
+  
+select{
+    box-sizing: border-box;
+    width: 30%;
+    height: 7vh;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+
+.inputs{
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+  
+    height: 100%;
+    width: 100%;
+}
+  
+.input{
+  
+  box-sizing: border-box;
+  width: 80%;
+  height: 7vh;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px; 
+}
+
+.inputNome{
+  box-sizing: border-box;
+  width: 95%;
+  height: 7vh;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px; 
+}
+
+.inputMenor{
+    width: 55%;
+    height: 7vh;
+}
+.input-out{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#descricao{
+    border-radius: 10px;
+    width: 95%;
+    height: 10vw;
+}
+
+p{
+    color: #808080;
+    margin-top: 2vh;
+}
+h4{
+
+    font-size: 18px;
+}
+.buttonEsqueceu{
+    width: 20%;
+    border: none;
+    background: transparent;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: lowercase;
+    padding: 0px !important;
+    margin: 0px !important;
+    color: rgb(102, 102, 102) !important;
+}
+
+.buttonContinuar{
+    margin-left: 10%;
+    margin-top: 5vh;
+    box-sizing: border-box;
+    width: 80%;
+    height: 56px;
+    background: #006B3F;
+    border: 1px #006B3F;
+    border-radius: 10px ;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+button .buttonEsqueceu{
+    margin-right: 2vw;
+}
+
+#buttonProximo{
+    margin-top: 5vh;
+}
+
+.senhaesqueceu{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+
+}
+#nomeEmpresa{
+    margin-top: 10vh;
+}
+
+table{
+    width: 100%;
+}
+
+
+table input{
+    width: 80%;
+}
+
+/*Edicao rodape*/
+.logo-rodape{
+    padding: 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 5vh;
+}
+
+.corpo-rodape{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nosso-git{
+    padding-bottom: 3vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+    
